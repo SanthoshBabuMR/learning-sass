@@ -1,0 +1,48 @@
+/**
+ * file: _layout.scss 
+ * usage: css styles for layout 
+**/
+
+.doc-wrap {
+	padding: 0 10px;
+}
+.page-header {
+	background-color: #D7D7D4;
+
+	.page-title {
+		background-color: #8AC007;
+		padding: 0 12px;
+		color: #FFFFFF;
+	}
+}
+.page-content {
+	background-color: #FDFDFD;
+	padding: 10px;
+}
+.page-footer {
+	background-color: #D7D7D4;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+
+	.page-footer-navigation {
+		padding: 5px 10px;
+		margin: 0;
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+			height: 0;
+			line-height: 0;
+		}
+
+		li {
+			list-style: none;
+			float: left;
+			padding: 0 15px 0 0;
+		}
+		a {
+			font-size: 11px;
+			text-decoration: none;	
+		}
+	}
+}
