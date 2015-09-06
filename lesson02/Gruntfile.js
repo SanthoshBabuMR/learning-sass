@@ -1,24 +1,44 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 		sass: {
-			ConvertToCss: {
- 				expand: true,
-	          	cwd: "scss",
-	          	src: ["*.scss"],
-	          	dest: "css",
-	          	ext: ".css"
+			dev: {
+				options: {
+					sourceMap: true, 
+			        outputStyle: "nested"  // Default: nested Values: nested, expanded, compact, compressed
+			        //imagePath: "../",	
+				},
+				files: [
+					{
+		 				expand: true,
+			          	cwd: "scss",
+			          	src: ["*.scss"],
+			          	dest: "css",
+			          	ext: ".css"
+					}
+				]
 			},
-			options: {
-				sourceMap: true, 
-		        outputStyle: "nested" 
-		        //imagePath: "../",	
+			prod: {
+				options: {
+					sourceMap: false, 
+			        outputStyle: "compressed" // Default: nested Values: nested, expanded, compact, compressed
+			        //imagePath: "../",	
+				},
+				files: [
+					{
+		 				expand: true,
+			          	cwd: "scss",
+			          	src: ["*.scss"],
+			          	dest: "css",
+			          	ext: ".min.css"
+					}
+				]
 			}
 		},
 		watch: {
 			sass: {
 				files: ["scss/**/*.scss"],
-				tasks: ["sass"]
-			}
+				tasks: ["sass:dev"]	
+}
 		},
 		connect: {
 			server: {
@@ -34,10 +54,9 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks( "grunt-sass" );
 	grunt.loadNpmTasks( "grunt-contrib-connect" );
-	grunt.loadNpmTasks("grunt-contrib-watch");
+	grunt.loadNpmTasks( "grunt-contrib-watch" );
 
-	grunt.registerTask( "sassy", ["sass", "watch:sass"] );
+	grunt.registerTask( "sassy", ["sass:dev", "watch:sass:dev"] );
+	grunt.registerTask( "sassy-prod", ["sass:prod"] );
 	grunt.registerTask( "server", "connect" );
-
-
 }
