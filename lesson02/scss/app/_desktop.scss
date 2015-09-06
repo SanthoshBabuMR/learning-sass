@@ -1,0 +1,40 @@
+.doc-wrap {
+	padding: 10px;
+}
+
+.page-header {
+	border-bottom: 1px solid #CCCCCC;
+
+	.page-header-title {
+		margin: 0;
+		padding: 5px 0;
+		font-size: 24px;
+	}
+}
+
+.page-content {
+	color: #000000;
+	background: #FFFFFF;
+	font-size: 13px;
+}
+
+.page-footer {
+	.page-footer-navigation {
+		&:after {
+			display: block;
+			clear: both;
+			height: 0;
+			line-height: 0;
+		}
+	}
+	.page-footer-navigation-item {
+		float: left;
+		padding: 4px 10px;
+	}
+	.page-footer-navigation-link {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

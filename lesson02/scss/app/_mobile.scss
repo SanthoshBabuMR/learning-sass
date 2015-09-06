@@ -1,0 +1,40 @@
+.mobile-wrap {
+	padding: 10px;
+}
+
+.mobile-page-header {
+	border-bottom: 1px solid #CCCCCC;
+
+	.mobile-page-header-title {
+		margin: 0;
+		padding: 5px 0;
+		font-size: 24px;
+	}
+}
+
+.mobile-page-content {
+	color: #000000;
+	background: #FFFFFF;
+	font-size: 13px;
+}
+
+.mobile-page-footer {
+	.mobile-page-footer-navigation {
+		&:after {
+			display: block;
+			clear: both;
+			height: 0;
+			line-height: 0;
+		}
+	}
+	.mobile-page-footer-navigation-item {
+		float: left;
+		padding: 4px 10px;
+	}
+	.mobile-page-footer-navigation-link {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
