@@ -1,0 +1,11 @@
+https://www.npmjs.com/package/grunt-sass
+http://yellowpencil.com/blog/how-to-build-static-site-with-jekyll-grunt-libsass/
+https://github.com/sass/node-sass#options
+https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization
+http://sass-guidelin.es/#the-7-1-pattern
+https://webdesign.tutsplus.com/articles/getting-to-know-libsass--cms-23114
+http://www.zell-weekeat.com/grunt-sass-with-susy/
+http://dannyenglander.com/blog/libsass-grunt-do-you-feel-need-for-speed
+http://jshak.es/easy-icomoon-icons-with-sass/
+http://stackoverflow.com/questions/26088529/using-libsass-with-compass
+https://bundles.kunstmaan.be/news/so-how-did-we-implement-our-new-front-end-development-workflow-into-symfony

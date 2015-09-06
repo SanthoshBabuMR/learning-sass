@@ -10,9 +10,9 @@ module.exports = function(grunt) {
 				files: [
 					{
 		 				expand: true,
-			          	cwd: "scss",
+			          	cwd: "./scss",
 			          	src: ["*.scss"],
-			          	dest: "css",
+			          	dest: "./css",
 			          	ext: ".css"
 					}
 				]
@@ -26,9 +26,9 @@ module.exports = function(grunt) {
 				files: [
 					{
 		 				expand: true,
-			          	cwd: "scss",
+			          	cwd: "./scss",
 			          	src: ["*.scss"],
-			          	dest: "css",
+			          	dest: "./css",
 			          	ext: ".min.css"
 					}
 				]
