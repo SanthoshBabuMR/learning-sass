@@ -1,7 +1,7 @@
 {
-  "name": "lesson03",
+  "name": "lesson01",
   "version": "1.0.0",
-  "description": "lesson03 - modular stylesheets using libsass with node and grunt",
+  "description": "lesson01 - modular stylesheets using libsass with node and grunt",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
